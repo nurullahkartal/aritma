@@ -1,31 +1,39 @@
 import os
 
-def ikonlari_duzelt():
+def her_seyi_onarma():
     html_dosyalari = [f for f in os.listdir('.') if f.endswith('.html')]
     
-    # Çalışan en güncel ikon kütüphanesi linki
-    yeni_ikon_linki = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">'
+    # Tüm ihtimallere karşı (Themify, FA4, FA6) çalışan sağlam CDN linkleri
+    ikon_paketleri = """
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    """
     
-    print("🛠️ İkon onarım operasyonu başladı...")
+    print("🚀 Geniş kapsamlı ikon onarımı başlatıldı...")
 
     for dosya in html_dosyalari:
         with open(dosya, 'r', encoding='utf-8', errors='ignore') as f:
             icerik = f.read()
 
-        # 1. Eski (bozuk olan) fontawesome linklerini temizle
+        # 1. Eski, bozuk ikon linklerini temizle (Tekrar etmemesi için)
         import re
-        # aritma_files içindeki fontawesome.css linkini bulur ve siler
-        icerik = re.sub(r'<link.*?href=".*?fontawesome.*?".*?>', '', icerik)
+        icerik = re.sub(r'<link.*?href=".*?themify.*?".*?>', '', icerik)
+        icerik = re.sub(r'<link.*?href=".*?flaticon.*?".*?>', '', icerik)
 
-        # 2. Yeni ve çalışan linki </head> etiketinden hemen önce ekle
+        # 2. Yeni paketleri </head> öncesine ekle
         if '</head>' in icerik:
-            icerik = icerik.replace('</head>', yeni_ikon_linki + '\n</head>')
+            # Eğer daha önce eklediğimiz kod varsa onu da yenisiyle değiştirelim
+            if 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' in icerik:
+                icerik = icerik.replace('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">', ikon_paketleri)
+            else:
+                icerik = icerik.replace('</head>', ikon_paketleri + '\n</head>')
         
         with open(dosya, 'w', encoding='utf-8') as f:
             f.write(icerik)
-        print(f"✅ {dosya} dosyasında ikonlar canlandırıldı.")
+        print(f"✅ {dosya} dosyasının menü okları ve ikonları tazelendi.")
 
-    print("\n🏁 İşlem bitti haci! Şimdi ikonlar fıstık gibi görünecek.")
+    print("\n🏁 Operasyon bitti haci! Şimdi o oklar mecburen gelecek.")
 
 if __name__ == "__main__":
-    ikonlari_duzelt()
+    her_seyi_onarma()
