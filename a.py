@@ -1,28 +1,30 @@
 import os
+import re
 
-def klasor_yollarini_tekellestir():
+def link_uzantilarini_duzelt():
     html_dosyalari = [f for f in os.listdir('.') if f.endswith('.html')]
     
-    print("🚀 'assets' yolları 'aritma_files' olarak güncelleniyor...")
+    # Düzeltilecek sayfaların listesi
+    sayfalar = ['index', 'hakkimda', 'ekibimiz', 'iletisim', 'blog', 'sikca-sorulanlar']
+    
+    print("🔗 Sayfa linkleri kontrol ediliyor ve .html ekleniyor...")
 
     for dosya in html_dosyalari:
         with open(dosya, 'r', encoding='utf-8', errors='ignore') as f:
             icerik = f.read()
 
-        # 1. href="assets/ -> href="aritma_files/
-        icerik = icerik.replace('href="assets/', 'href="aritma_files/')
-        
-        # 2. src="assets/ -> src="aritma_files/
-        icerik = icerik.replace('src="assets/', 'src="aritma_files/')
-        
-        # 3. Eğer tırnaksız veya farklı kombinasyonlar varsa onları da kapsayalım
-        icerik = icerik.replace('="assets/', '="aritma_files/')
+        for sayfa in sayfalar:
+            # Sadece tam eşleşen (sonunda .html olmayan) linkleri bul ve değiştir
+            # Örn: href="index" -> href="index.html"
+            eski_link = f'href="{sayfa}"'
+            yeni_link = f'href="{sayfa}.html"'
+            icerik = icerik.replace(eski_link, yeni_link)
 
         with open(dosya, 'w', encoding='utf-8') as f:
             f.write(icerik)
-        print(f"✅ {dosya} yolu güncellendi.")
+        print(f"✅ {dosya} dosyasındaki linkler bağlandı.")
 
-    print("\n🏁 Operasyon bitti haci! Artık site sadece 'aritma_files' klasörüne bakıyor.")
+    print("\n🏁 Operasyon bitti haci! Artık menü tıkır tıkır çalışacak.")
 
 if __name__ == "__main__":
-    klasor_yollarini_tekellestir()
+    link_uzantilarini_duzelt()
