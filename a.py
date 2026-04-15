@@ -1,29 +1,36 @@
 import os
 
-def temizlik_yap():
-    html_dosyalari = [f for f in os.listdir('.') if f.endswith('.html')]
+def adresleri_sadelestir():
+    # Aranacak ve değiştirilecek adresler
+    eski_adres = "www.aritma.nurullahkartal.com.tr"
+    yeni_adres = "aritma.nurullahkartal.com.tr"
     
-    # SENİN BİLGİLERİN - BURAYI DÜZELTEBİLİRSİN
-    yeni_mail = "info@guvensuaritma.com" # Buraya kendi mailini yaz haci
-    
-    for dosya in html_dosyalari:
-        with open(dosya, 'r', encoding='utf-8', errors='ignore') as f:
-            icerik = f.read()
+    print(f"'{eski_adres}' -> '{yeni_adres}' dönüşümü başlatılıyor...\n")
+    degistirilen_dosya_sayisi = 0
 
-        # 1. Eski mail adreslerini temizle
-        icerik = icerik.replace("info@goldwatergaziantep.com.tr", yeni_mail)
+    # os.walk ile tüm alt klasörleri ve dosyaları tara
+    for kok_dizin, alt_dizinler, dosyalar in os.walk('.'):
+        for dosya in dosyalar:
+            # Sadece metin tabanlı dosyaları kontrol et
+            if dosya.endswith(('.html', '.css', '.js', '.json', '.txt')):
+                dosya_yolu = os.path.join(kok_dizin, dosya)
+                
+                try:
+                    with open(dosya_yolu, 'r', encoding='utf-8', errors='ignore') as f:
+                        icerik = f.read()
+                    
+                    if eski_adres in icerik:
+                        yeni_icerik = icerik.replace(eski_adres, yeni_adres)
+                        
+                        with open(dosya_yolu, 'w', encoding='utf-8') as f:
+                            f.write(yeni_icerik)
+                        
+                        print(f"✅ Güncellendi: {dosya_yolu}")
+                        degistirilen_dosya_sayisi += 1
+                except Exception as e:
+                    print(f"❌ Hata (Atlandı): {dosya_yolu} - {e}")
 
-        # 2. srcset içindeki dış bağlantılı logoları temizle (Sadece yerel logonu kullansın)
-        import re
-        icerik = re.sub(r'srcset="https://goldwatergaziantep.com.tr.*?"', '', icerik)
-
-        # 3. Dışarıdan çekilen arka plan resimlerini yerelleştir (veya o linkleri temizle)
-        # Şimdilik en azından senin klasöründeki resimlere yönlendirelim
-        icerik = icerik.replace("https://goldwatergaziantep.com.tr/panel/uploads/slides_v/1920x650/su-aritma-cihazi-fiyatlari.jpg", "aritma_files/1.jpg")
-
-        with open(dosya, 'w', encoding='utf-8') as f:
-            f.write(icerik)
-        print(f"✅ {dosya} temizlendi.")
+    print(f"\nİşlem bitti! Toplam {degistirilen_dosya_sayisi} dosya pırıl pırıl yapıldı.")
 
 if __name__ == "__main__":
-    temizlik_yap()
+    adresleri_sadelestir()
