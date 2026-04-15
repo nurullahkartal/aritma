@@ -1,26 +1,35 @@
 import os
+import re
 
-def pro_ikonlari_ucretsiz_yap():
-    html_dosyalari = [f for f in os.listdir('.') if f.endswith('.html')]
+def her_seyi_benim_siteye_bagla():
+    html_files = [f for f in os.listdir('.') if f.endswith('.html')]
     
-    print("🚀 Pro ikonlar Free versiyona dönüştürülüyor...")
+    # Senin yeni ana yolun
+    yeni_yol = "https://aritma.nurullahkartal.com.tr/aritma_files"
+    
+    # Eski sitenin genel URL yapısı (regex için)
+    # Bu desen, eski sitenin linkini bulur ve sadece sonundaki dosya adını yakalar
+    eski_url_deseni = r'https?://(?:www\.)?goldwatergaziantep\.com\.tr/[^"\')\s]*/([^"\')\s]+\.[a-zA-Z0-9]+)'
+    
+    print("🚀 Tüm dış linkler senin siteye ve aritma_files klasörüne taşınıyor...")
 
-    for dosya in html_dosyalari:
+    for dosya in html_files:
         with open(dosya, 'r', encoding='utf-8', errors='ignore') as f:
             icerik = f.read()
-
-        # 1. fal (Light - Pro) olanları fas (Solid - Free) yap
-        # 'fal ' şeklinde sonunda boşlukla aratıyoruz ki başka kelimelerle karışmasın
-        icerik = icerik.replace('fal ', 'fas ')
         
-        # 2. Eğer far (Regular) olup da görünmeyen varsa onları da fas yapabiliriz
-        # icerik = icerik.replace('far ', 'fas ')
-
+        # Fonksiyon: Yakalanan dosya adını senin yeni yolunla birleştirir
+        def degistir(match):
+            dosya_adi = match.group(1)
+            return f"{yeni_yol}/{dosya_adi}"
+        
+        # Tüm eşleşmeleri değiştir (srcset, background-image, src fark etmez)
+        yeni_icerik = re.sub(eski_url_deseni, degistir, icerik)
+        
         with open(dosya, 'w', encoding='utf-8') as f:
-            f.write(icerik)
-        print(f"✅ {dosya} dosyasındaki Pro ikonlar halledildi.")
+            f.write(yeni_icerik)
+        print(f"✅ {dosya} entegrasyonu tamamlandı.")
 
-    print("\n🏁 İşlem bitti haci! Şimdi o oklar ve menü ikonları 'ücretsiz' ama sağlam görünecek.")
+    print("\n🏁 Operasyon bitti haci! Artık site tamamen sana ve senin sunucuna bağlı.")
 
 if __name__ == "__main__":
-    pro_ikonlari_ucretsiz_yap()
+    her_seyi_benim_siteye_bagla()
