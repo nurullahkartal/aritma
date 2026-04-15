@@ -1,36 +1,31 @@
 import os
 
-def adresleri_sadelestir():
-    # Aranacak ve değiştirilecek adresler
-    eski_adres = "www.aritma.nurullahkartal.com.tr"
-    yeni_adres = "aritma.nurullahkartal.com.tr"
+def ikonlari_duzelt():
+    html_dosyalari = [f for f in os.listdir('.') if f.endswith('.html')]
     
-    print(f"'{eski_adres}' -> '{yeni_adres}' dönüşümü başlatılıyor...\n")
-    degistirilen_dosya_sayisi = 0
+    # Çalışan en güncel ikon kütüphanesi linki
+    yeni_ikon_linki = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">'
+    
+    print("🛠️ İkon onarım operasyonu başladı...")
 
-    # os.walk ile tüm alt klasörleri ve dosyaları tara
-    for kok_dizin, alt_dizinler, dosyalar in os.walk('.'):
-        for dosya in dosyalar:
-            # Sadece metin tabanlı dosyaları kontrol et
-            if dosya.endswith(('.html', '.css', '.js', '.json', '.txt')):
-                dosya_yolu = os.path.join(kok_dizin, dosya)
-                
-                try:
-                    with open(dosya_yolu, 'r', encoding='utf-8', errors='ignore') as f:
-                        icerik = f.read()
-                    
-                    if eski_adres in icerik:
-                        yeni_icerik = icerik.replace(eski_adres, yeni_adres)
-                        
-                        with open(dosya_yolu, 'w', encoding='utf-8') as f:
-                            f.write(yeni_icerik)
-                        
-                        print(f"✅ Güncellendi: {dosya_yolu}")
-                        degistirilen_dosya_sayisi += 1
-                except Exception as e:
-                    print(f"❌ Hata (Atlandı): {dosya_yolu} - {e}")
+    for dosya in html_dosyalari:
+        with open(dosya, 'r', encoding='utf-8', errors='ignore') as f:
+            icerik = f.read()
 
-    print(f"\nİşlem bitti! Toplam {degistirilen_dosya_sayisi} dosya pırıl pırıl yapıldı.")
+        # 1. Eski (bozuk olan) fontawesome linklerini temizle
+        import re
+        # aritma_files içindeki fontawesome.css linkini bulur ve siler
+        icerik = re.sub(r'<link.*?href=".*?fontawesome.*?".*?>', '', icerik)
+
+        # 2. Yeni ve çalışan linki </head> etiketinden hemen önce ekle
+        if '</head>' in icerik:
+            icerik = icerik.replace('</head>', yeni_ikon_linki + '\n</head>')
+        
+        with open(dosya, 'w', encoding='utf-8') as f:
+            f.write(icerik)
+        print(f"✅ {dosya} dosyasında ikonlar canlandırıldı.")
+
+    print("\n🏁 İşlem bitti haci! Şimdi ikonlar fıstık gibi görünecek.")
 
 if __name__ == "__main__":
-    adresleri_sadelestir()
+    ikonlari_duzelt()
