@@ -7,129 +7,63 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hakkimizda.html</loc>
+    <loc>https://aritma.nurullahkartal.com.tr/hakkimizda/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/iletisim.html</loc>
+    <loc>https://aritma.nurullahkartal.com.tr/iletisim/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hizmetlerimiz.html</loc>
+    <loc>https://aritma.nurullahkartal.com.tr/hizmetlerimiz/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-yedek-parca-satis-ve-servis-30.html</loc>
-    <lastmod>2024-11-13</lastmod>
+    <loc>https://aritma.nurullahkartal.com.tr/ekibimiz/</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-filtre-degisimi-29.html</loc>
-    <lastmod>2024-11-13</lastmod>
+    <loc>https://aritma.nurullahkartal.com.tr/sikca-sorulanlar/</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-ariza-tespit-ve-onarim-28.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://aritma.nurullahkartal.com.tr/foto-galeri/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-servis-ve-kurulum-27.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://aritma.nurullahkartal.com.tr/video-galeri/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-satisi-ve-kurulum-26.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://aritma.nurullahkartal.com.tr/urunlerimiz/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog.html</loc>
+    <loc>https://aritma.nurullahkartal.com.tr/talep/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aritma.nurullahkartal.com.tr/blog/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog-icerik/saglikli-su-tuketiminin-onemi-ve-su-aritma-cihazlarinin-rolu-21.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog-icerik/su-aritma-cihazlarinda-en-sik-gorulen-sorunlar-ve-cozumleri-20.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog-icerik/musluktan-icilen-suyun-kalitesini-artirmak-su-aritma-sistemleri-ile-ilgili-bilmeniz-gerekenler-19.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog-icerik/su-aritma-cihazi-filtre-degisimi-ne-zaman-yapilmali-ve-neden-onemlidir-18.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog-icerik/evde-su-aritmanin-faydalari-saglikli-suya-kolay-ulasmanin-yolu-17.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/blog-icerik/su-aritma-cihazi-alirken-nelere-dikkat-edilmeli-en-dogru-secimi-yapin!-16.html</loc>
-    <lastmod>2024-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/ekibimiz.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/sikca-sorulanlar.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/foto-galeri.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/video-galeri.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/urunlerimiz.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aritma.nurullahkartal.com.tr/talep.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>

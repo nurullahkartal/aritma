@@ -1,81 +1,93 @@
 import os
-import shutil
+import re
 from bs4 import BeautifulSoup
 
-# Ana dizin (scriptin bulunduğu klasör)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# İşlem yapılmayacak dosyalar
-EXCLUDE_FILES = {"index.html", "404.html", "tesekkurler.html", "robots.txt", "sitemap.xml"}
+def fix_paths_in_file(filepath):
+    # Dosyanın ana dizine göre derinliğini hesapla (kaç klasör içeride)
+    rel_path = os.path.relpath(filepath, BASE_DIR)
+    depth = rel_path.count(os.sep)
+    prefix = "../" * depth if depth > 0 else ""
 
-# Ana dizindeki tüm .html dosyalarını bul
-html_files = [f for f in os.listdir(BASE_DIR) if f.endswith(".html") and f not in EXCLUDE_FILES]
-
-print(f"Bulunan HTML dosyaları: {len(html_files)}")
-
-# 1. Her dosya için klasör oluştur ve taşı
-moved_files = {}
-for html_file in html_files:
-    # Klasör adı (uzantısız)
-    folder_name = html_file.replace(".html", "")
-    folder_path = os.path.join(BASE_DIR, folder_name)
-    
-    # Klasörü oluştur (varsa hata verme)
-    os.makedirs(folder_path, exist_ok=True)
-    
-    # Dosyayı index.html olarak klasöre taşı
-    old_path = os.path.join(BASE_DIR, html_file)
-    new_path = os.path.join(folder_path, "index.html")
-    shutil.move(old_path, new_path)
-    
-    moved_files[html_file] = folder_name
-    print(f"✓ {html_file} → {folder_name}/index.html")
-
-# 2. Tüm HTML dosyalarındaki bağlantıları güncelle
-def update_links(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
-    
+
     modified = False
-    for a_tag in soup.find_all("a", href=True):
-        href = a_tag["href"]
-        
-        # Eğer href, taşınan dosyalardan birine işaret ediyorsa
-        if href in moved_files:
-            # href'i klasör adıyla değiştir (sonuna slash ekleyerek)
-            new_href = moved_files[href] + "/"
-            a_tag["href"] = new_href
+
+    # 1. link etiketleri (CSS, favicon vb.)
+    for tag in soup.find_all("link", href=True):
+        href = tag["href"]
+        if not href.startswith(("http", "https", "//", "data:", "#")):
+            # Eğer zaten ../ ile başlıyorsa önce temizle
+            clean_href = re.sub(r'^(\.\./)*', '', href)
+            new_href = prefix + clean_href
+            tag["href"] = new_href
             modified = True
-        # Eğer href .html ile bitiyor ve dosya taşınmışsa (alt dizinlerdeki dosyalar için)
-        elif href.endswith(".html") and os.path.basename(href) in moved_files:
-            folder = moved_files[os.path.basename(href)]
-            # Yolu güncelle (göreceli yolu koru)
-            if href.startswith("../"):
-                new_href = href.replace(os.path.basename(href), folder + "/")
-            else:
-                new_href = folder + "/"
-            a_tag["href"] = new_href
+
+    # 2. script etiketleri (JS)
+    for tag in soup.find_all("script", src=True):
+        src = tag["src"]
+        if not src.startswith(("http", "https", "//", "data:", "#")):
+            clean_src = re.sub(r'^(\.\./)*', '', src)
+            new_src = prefix + clean_src
+            tag["src"] = new_src
             modified = True
-    
+
+    # 3. img etiketleri
+    for tag in soup.find_all("img", src=True):
+        src = tag["src"]
+        if not src.startswith(("http", "https", "//", "data:", "#")):
+            clean_src = re.sub(r'^(\.\./)*', '', src)
+            new_src = prefix + clean_src
+            tag["src"] = new_src
+            modified = True
+
+    # 4. a etiketleri (href) - sadece göreceli yollar için
+    for tag in soup.find_all("a", href=True):
+        href = tag["href"]
+        if not href.startswith(("http", "https", "//", "mailto:", "tel:", "#", "javascript:")):
+            # .html uzantılı veya klasör adı olanlar
+            if href.endswith(".html") or "/" in href:
+                clean_href = re.sub(r'^(\.\./)*', '', href)
+                new_href = prefix + clean_href
+                tag["href"] = new_href
+                modified = True
+
+    # 5. form action (eğer göreceli ise)
+    for tag in soup.find_all("form", action=True):
+        action = tag["action"]
+        if action and not action.startswith(("http", "https", "//", "#")):
+            clean_action = re.sub(r'^(\.\./)*', '', action)
+            new_action = prefix + clean_action
+            tag["action"] = new_action
+            modified = True
+
     if modified:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(str(soup))
         return True
     return False
 
-print("\nBağlantılar güncelleniyor...")
-updated_count = 0
-for root, dirs, files in os.walk(BASE_DIR):
-    for file in files:
-        if file.endswith(".html") or file.endswith(".htm"):
-            filepath = os.path.join(root, file)
-            if update_links(filepath):
-                updated_count += 1
-                print(f"✓ Bağlantılar güncellendi: {os.path.relpath(filepath, BASE_DIR)}")
+def main():
+    print("Tüm kaynak yolları düzeltiliyor...\n")
+    count = 0
+    for root, dirs, files in os.walk(BASE_DIR):
+        # .git klasörünü atla
+        if '.git' in root:
+            continue
+        for file in files:
+            if file.endswith(".html") or file.endswith(".htm"):
+                filepath = os.path.join(root, file)
+                if fix_paths_in_file(filepath):
+                    count += 1
+                    rel = os.path.relpath(filepath, BASE_DIR)
+                    print(f"✓ Düzeltildi: {rel}")
+    print(f"\n✅ Toplam {count} dosya güncellendi.")
+    print("\nŞimdi sırasıyla şu komutları çalıştır:")
+    print("  git add .")
+    print('  git commit -m "Fix: CSS, JS ve resim yollari duzeltildi"')
+    print("  git push")
 
-print(f"\n✅ İşlem tamamlandı! {len(html_files)} dosya taşındı, {updated_count} dosyada bağlantı güncellendi.")
-print("\n📌 Not: Ana sayfanız (index.html) olduğu yerde kaldı.")
-print("Şimdi aşağıdaki komutları çalıştırarak değişiklikleri GitHub'a gönderin:")
-print("  git add .")
-print('  git commit -m "Clean URLs: .html uzantıları kaldırıldı"')
-print("  git push")
+if __name__ == "__main__":
+    main()
