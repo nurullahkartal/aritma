@@ -1,0 +1,508 @@
+Uri: https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\npm\sweetalert2@11.0.18\dist\sweetalert2.all.js
+Content Type: application/javascript
+
+Uri: https://nurullahkartal.com.tr/resources/uploads/editor/nklogo.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\resources\uploads\editor\nklogo.png
+Content Type: image/png
+
+Uri: https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\css2-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE3tF.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiAyp8kv8JHgFVrJJLmE3tF.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLBT5V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLBT5V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLCz7V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDD4V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLDD4V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLDz8V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLEj6V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLFj_V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9V1s.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiByp8kv8JHgFVrLGT9V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm111lEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLm111lEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21llEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLm21llEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm81xlEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLm81xlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmr19lEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLmr19lEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmv1plEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLmv1plEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmy15lEA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiDyp8kv8JHgFVrJJLmy15lEA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrFJA.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiEyp8kv8JHgFVrFJA.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrJJLedw.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiGyp8kv8JHgFVrJJLedw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrLPTedw.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\poppins\v24\pxiGyp8kv8JHgFVrLPTedw.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXiA8.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXiA8.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQiA8.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRiA8.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQiA8.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QiA8.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabWmT.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabWmT.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmT.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmT.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbGmT.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbGmT.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtammT.ttf
+Content Type: font/ttf
+
+Uri: https://aritma.nurullahkartal.com.tr/
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\index.htm
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/animate.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\animate.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/fontawesome.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\fontawesome.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/magnific-popup.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\magnific-popup.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/nice-select.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\nice-select.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/slick-theme.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\slick-theme.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/slick.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\slick.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/css/style.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\css\style.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/fonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\fonts\fa-brands-400.ttf
+Content Type: application/font-sfnt
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/fonts/fa-light-300.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\fonts\fa-light-300.ttf
+Content Type: application/font-sfnt
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/fonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\fonts\fa-regular-400.ttf
+Content Type: application/font-sfnt
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/fonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\fonts\fa-solid-900.ttf
+Content Type: application/font-sfnt
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/fonts/slick/slick.ttf
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\fonts\slick\slick.ttf
+Content Type: application/font-sfnt
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/images/preloader.svg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\images\preloader.svg
+Content Type: image/svg+xml
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/images/shape/shape_2.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\images\shape\shape_2.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/images/shape/shape_4.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\images\shape\shape_4.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/bootstrap-dropdown-ml-hack.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\bootstrap-dropdown-ml-hack.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/circle-progress.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\circle-progress.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/countdown.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\countdown.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/counterup.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\counterup.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/gmaps.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\gmaps.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/imagesloaded.pkgd.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\imagesloaded.pkgd.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/isotope.pkgd.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\isotope.pkgd.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/jquery.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/magnific-popup.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\magnific-popup.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/main.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/masonry.pkgd.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\masonry.pkgd.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/mCustomScrollbar.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\mCustomScrollbar.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/nice-select.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\nice-select.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/parallaxie.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\parallaxie.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/popper.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\popper.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/slick.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\slick.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/waypoints.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\waypoints.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/assets/js/wow.min.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\assets\js\wow.min.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/blog
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/blog-icerik/evde-su-aritmanin-faydalari-saglikli-suya-kolay-ulasmanin-yolu-17
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog-icerik\evde-su-aritmanin-faydalari-saglikli-suya-kolay-ulasmanin-yolu-17.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/blog-icerik/musluktan-icilen-suyun-kalitesini-artirmak-su-aritma-sistemleri-ile-ilgili-bilmeniz-gerekenler-19
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog-icerik\musluktan-icilen-suyun-kalitesini-artirmak-su-aritma-sistemleri-ile-ilgili-bilmeniz-gerekenler-19.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/blog-icerik/saglikli-su-tuketiminin-onemi-ve-su-aritma-cihazlarinin-rolu-21
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog-icerik\saglikli-su-tuketiminin-onemi-ve-su-aritma-cihazlarinin-rolu-21.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/blog-icerik/su-aritma-cihazi-alirken-nelere-dikkat-edilmeli-en-dogru-secimi-yapin!-16
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog-icerik\su-aritma-cihazi-alirken-nelere-dikkat-edilmeli-en-dogru-secimi-yapin!-16.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/blog-icerik/su-aritma-cihazi-filtre-degisimi-ne-zaman-yapilmali-ve-neden-onemlidir-18
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog-icerik\su-aritma-cihazi-filtre-degisimi-ne-zaman-yapilmali-ve-neden-onemlidir-18.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/blog-icerik/su-aritma-cihazlarinda-en-sik-gorulen-sorunlar-ve-cozumleri-20
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\blog-icerik\su-aritma-cihazlarinda-en-sik-gorulen-sorunlar-ve-cozumleri-20.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/css/lightbox.css
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\css\lightbox.css
+Content Type: text/css
+
+Uri: https://aritma.nurullahkartal.com.tr/ekibimiz
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\ekibimiz.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/foto-galeri
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\foto-galeri.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hakkimizda
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hakkimizda.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-ariza-tespit-ve-onarim-28
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hizmet-icerik\su-aritma-cihazi-ariza-tespit-ve-onarim-28.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-filtre-degisimi-29
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hizmet-icerik\su-aritma-cihazi-filtre-degisimi-29.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-satisi-ve-kurulum-26
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hizmet-icerik\su-aritma-cihazi-satisi-ve-kurulum-26.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-servis-ve-kurulum-27
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hizmet-icerik\su-aritma-cihazi-servis-ve-kurulum-27.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hizmet-icerik/su-aritma-cihazi-yedek-parca-satis-ve-servis-30
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hizmet-icerik\su-aritma-cihazi-yedek-parca-satis-ve-servis-30.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/hizmetlerimiz
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\hizmetlerimiz.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/iletisim
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\iletisim.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/images/close.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\images\close.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/images/loading.gif
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\images\loading.gif
+Content Type: image/gif
+
+Uri: https://aritma.nurullahkartal.com.tr/images/next.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\images\next.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/images/prev.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\images\prev.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/index
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\index-1.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/index.html
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\index.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/js/lightbox.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\js\lightbox.js
+Content Type: application/javascript
+
+Uri: https://aritma.nurullahkartal.com.tr/kategori-icerik/su-aritma-cihazi-5
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\kategori-icerik\su-aritma-cihazi-5.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/brands_v/360x220/tools.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\brands_v\360x220\tools.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/galleries_v/images/resim-galerisi/851x606/1.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\galleries_v\images\resim-galerisi\851x606\1.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/galleries_v/images/resim-galerisi/851x606/2.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\galleries_v\images\resim-galerisi\851x606\2.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/galleries_v/images/resim-galerisi/851x606/3.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\galleries_v\images\resim-galerisi\851x606\3.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/galleries_v/images/resim-galerisi/851x606/4.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\galleries_v\images\resim-galerisi\851x606\4.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/galleries_v/images/resim-galerisi/851x606/5.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\galleries_v\images\resim-galerisi\851x606\5.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/galleries_v/images/resim-galerisi/851x606/6.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\galleries_v\images\resim-galerisi\851x606\6.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/news_v/730x411/6.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\news_v\730x411\6.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/services_v/770x435/2.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\services_v\770x435\2.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/services_v/770x435/3.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\services_v\770x435\3.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/services_v/770x435/4.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\services_v\770x435\4.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/services_v/770x435/5.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\services_v\770x435\5.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/services_v/770x435/hizmet1.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\services_v\770x435\hizmet1.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/1280x720/guvensuaritma.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\1280x720\guvensuaritma.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/1920x488/1.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\1920x488\1.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/1920x488/6.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\1920x488\6.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/1920x488/su-aritma-1.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\1920x488\su-aritma-1.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/1920x488/su-aritma-2.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\1920x488\su-aritma-2.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/32x32/guvensuaritma.png
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\32x32\guvensuaritma.png
+Content Type: image/png
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/settings_v/748x804/su-aritma.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\settings_v\748x804\su-aritma.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/slides_v/1920x650/su-aritma-cihazi-fiyatlari.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\slides_v\1920x650\su-aritma-cihazi-fiyatlari.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/teams_v/349x388/6.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\teams_v\349x388\6.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/panel/uploads/yorum_v/555x343/6.jpg
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\panel\uploads\yorum_v\555x343\6.jpg
+Content Type: image/jpeg
+
+Uri: https://aritma.nurullahkartal.com.tr/sikca-sorulanlar
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\sikca-sorulanlar.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/talep
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\talep.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/urun-icerik/urun-1-12
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\urun-icerik\urun-1-12.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/urunlerimiz
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\urunlerimiz.html
+Content Type: text/html
+
+Uri: https://aritma.nurullahkartal.com.tr/video-galeri
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\video-galeri.html
+Content Type: text/html
+
+Uri: https://maps.googleapis.com/maps/api/js?key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&paint_origin=&libraries=geometry,search&v=weekly&loading=async&language=tr&region=tr&callback=onApiLoad
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\maps\api\js
+Content Type: text/javascript
+
+Uri: https://maps.gstatic.com/maps-api-v3/embed/js/64/9c/intl/tr_ALL/init_embed.js
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\maps-api-v3\embed\js\64\9c\intl\tr_ALL\init_embed.js
+Content Type: text/javascript
+
+Uri: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203472.81142414187!2d37.17614110184466!3d37.17022797917421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531fd1f1915103f:0x6c571e492123af24!2sŞehitkamil%2FGaziantep!5e0!3m2!1str!2str!4v1733334002570!5m2!1str!2str
+File Name: C:\Downloaded Web Sites\aritma.nurullahkartal.com.tr\maps\embed
+Content Type: text/html
+
