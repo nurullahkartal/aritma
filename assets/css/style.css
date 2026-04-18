@@ -7857,3 +7857,27 @@ hr.big_space {
 ================================================== */
 
 /*# sourceMappingURL=style.css.map */
+
+/* Mobil iyileştirmeler */
+.main_menu_list a,
+.header_btns_group a,
+.whatsapp a,
+.telefon a,
+.instagram a,
+.telegram a {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, p, a, span, div, li, h1, h2, h3, h4, h5, h6 {
+  font-size: clamp(12px, 4vw, 16px);
+}
+
+img, table, iframe, video, .container, .row, [class*="col-"] {
+  max-width: 100%;
+  height: auto;
+  word-wrap: break-word;
+}
