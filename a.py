@@ -1,73 +1,85 @@
 import os
-import re
 from bs4 import BeautifulSoup
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-def fix_paths_in_file(filepath):
-    rel_path = os.path.relpath(filepath, BASE_DIR)
-    depth = rel_path.count(os.sep)
-    prefix = "../" * depth if depth > 0 else ""
+# Sabit ön ek
+PREFIX = "GÜVEN Su Arıtma Sistemleri | Gaziantep Su Arıtma Servisi"
 
+# Dosya adına göre özel sonekler (istersen buraya ekleme yapabilirsin)
+OZEL_SONEKLER = {
+    "index.html": "",  # ana sayfada sonek olmasın
+    "hakkimizda.html": "Hakkımızda",
+    "hizmetlerimiz.html": "Hizmetlerimiz",
+    "iletisim.html": "İletişim",
+    "urunlerimiz.html": "Ürünlerimiz",
+    "blog.html": "Blog",
+    "ekibimiz.html": "Ekibimiz",
+    "foto-galeri.html": "Foto Galeri",
+    "video-galeri.html": "Video Galeri",
+    "sikca-sorulanlar.html": "Sıkça Sorulanlar",
+    "talep.html": "Servis Talep Formu",
+}
+
+def get_title(filename):
+    """Dosya adına göre başlık oluştur"""
+    if filename in OZEL_SONEKLER:
+        sonek = OZEL_SONEKLER[filename]
+    else:
+        # Eğer özel tanımlı değilse, dosya adından üret (uzantısız, tireleri boşluk yap, baş harfleri büyüt)
+        name = os.path.splitext(filename)[0]
+        sonek = name.replace("-", " ").title()
+    
+    if sonek:
+        return f"{PREFIX} - {sonek}"
+    else:
+        return PREFIX
+
+def update_title(filepath):
+    filename = os.path.basename(filepath)
+    new_title = get_title(filename)
+    
     with open(filepath, 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
-
+    
     modified = False
-
-    # link etiketleri (CSS)
-    for tag in soup.find_all("link", href=True):
-        href = tag["href"]
-        if not href.startswith(("http", "https", "//", "data:", "#")):
-            clean = re.sub(r'^(\.\./)*', '', href)
-            new_href = prefix + clean
-            if tag["href"] != new_href:
-                tag["href"] = new_href
-                modified = True
-
-    # script etiketleri (JS)
-    for tag in soup.find_all("script", src=True):
-        src = tag["src"]
-        if not src.startswith(("http", "https", "//", "data:", "#")):
-            clean = re.sub(r'^(\.\./)*', '', src)
-            new_src = prefix + clean
-            if tag["src"] != new_src:
-                tag["src"] = new_src
-                modified = True
-
-    # img etiketleri
-    for tag in soup.find_all("img", src=True):
-        src = tag["src"]
-        if not src.startswith(("http", "https", "//", "data:", "#")):
-            clean = re.sub(r'^(\.\./)*', '', src)
-            new_src = prefix + clean
-            if tag["src"] != new_src:
-                tag["src"] = new_src
-                modified = True
-
-    # css background-image url() düzeltmeleri (inline style veya style etiketi içinde)
-    for tag in soup.find_all(style=True):
-        style = tag["style"]
-        # arka plan resmi varsa
-        if "url(" in style:
-            # basit bir düzeltme (gelişmiş regex yapılabilir ama şimdilik temel)
-            pass  # bu kısmı atlayalım, gerekirse sonra ekleriz
-
+    
+    if soup.title:
+        if soup.title.string != new_title:
+            soup.title.string = new_title
+            modified = True
+    else:
+        title_tag = soup.new_tag("title")
+        title_tag.string = new_title
+        if soup.head:
+            soup.head.append(title_tag)
+        modified = True
+    
     if modified:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(str(soup))
         return True
     return False
 
-print("CSS/JS yolları düzeltiliyor...\n")
-count = 0
-for root, dirs, files in os.walk(BASE_DIR):
-    if '.git' in root:
-        continue
-    for file in files:
-        if file.endswith(('.html', '.htm')):
-            filepath = os.path.join(root, file)
-            if fix_paths_in_file(filepath):
-                count += 1
-                print(f"✓ {os.path.relpath(filepath, BASE_DIR)}")
+def main():
+    print("Her sayfaya özel başlıklar oluşturuluyor...\n")
+    count = 0
+    for root, dirs, files in os.walk(BASE_DIR):
+        if '.git' in root:
+            continue
+        for file in files:
+            if file.endswith(('.html', '.htm')):
+                filepath = os.path.join(root, file)
+                if update_title(filepath):
+                    count += 1
+                    rel = os.path.relpath(filepath, BASE_DIR)
+                    print(f"✓ Güncellendi: {rel} -> {get_title(file)}")
+    
+    print(f"\n✅ Toplam {count} dosya güncellendi.")
+    print("\nŞimdi sırasıyla şu komutları çalıştır:")
+    print("  git add .")
+    print('  git commit -m "Her sayfaya ozel basliklar eklendi"')
+    print("  git push")
 
-print(f"\n✅ {count} dosya güncellendi.")
+if __name__ == "__main__":
+    main()
