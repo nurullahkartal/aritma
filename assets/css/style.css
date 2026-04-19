@@ -14,8 +14,8 @@
 ================================================== */
 /* Template Fonts - Start
 ================================================== */
-@import url("../../css2");
-@import url("../../css2-1");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
 /* Template Fonts - End
 ================================================== */
 /* Template Global Reset - Start
@@ -7858,57 +7858,11 @@ hr.big_space {
 
 /*# sourceMappingURL=style.css.map */
 
-/* ===== MOBİL PERFORMANS İYİLEŞTİRMELERİ ===== */
-
-/* Dokunma hedefleri en az 48x48 piksel */
-.main_menu_list a,
-.header_btns_group a,
-.whatsapp a,
-.telefon a,
-.instagram a,
-.telegram a,
-button,
-.btn,
-.nav-link,
-.dropdown-item {
-  min-height: 48px;
-  min-width: 48px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* ===== SADECE YATAY ÇUBUK VE LOGO ORTALAMA ===== */
+html, body, .body_wrap {
+    overflow-x: hidden !important;
 }
-
-/* Mobilde okunabilir yazı boyutu (minimum 12px) */
-body, p, a, span, div, li, 
-h1, h2, h3, h4, h5, h6,
-input, textarea, select, button {
-  font-size: clamp(12px, 4vw, 16px);
-}
-
-/* Taşmayı engelle - yatay kaydırma olmasın */
-img, table, iframe, video, 
-.container, .row, [class*="col-"],
-.banner_section, .breadcrumb_section,
-.footer_section, .header_section {
-  max-width: 100%;
-  height: auto;
-  word-wrap: break-word;
-  overflow-x: hidden;
-}
-
-/* Mobil menü düzenlemeleri */
-@media (max-width: 991px) {
-  .main_menu_list {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .main_menu_list li {
-    width: 100%;
-  }
-  
-  .main_menu_list a {
-    justify-content: flex-start;
-    padding: 12px 16px;
-  }
+.site_logo {
+    margin: 0 auto !important;
+    text-align: center !important;
 }
