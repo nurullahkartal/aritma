@@ -17,7 +17,7 @@
     } else {
       $('.backtotop').stop(true, true).fadeOut();
     }
-  }); }
+  });
   $(function() {
     $(".scroll").on('click', function() {
       $("html,body").animate({scrollTop: 0}, "slow");
@@ -44,7 +44,7 @@
     } else {
       $('.header_sticky').removeClass("sticky")
     }
-  }); }
+  });
   // Header Sticky - End
   // --------------------------------------------------
 
@@ -86,16 +86,24 @@
 
   // Select Option - Start
   // --------------------------------------------------
-  if ($.fn.niceSelect && $('select').length > 0) { $('select').niceSelect(); }
+  try {
+    if ($.fn.niceSelect && $('select').length > 0) {
+      $('select').niceSelect();
+    }
+  } catch(e) {}
   // Select Option - End
   // --------------------------------------------------
 
   // Counter Up - Start
   // --------------------------------------------------
-  if ($.fn.counterUp) { $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  }); }
+  try {
+    if ($.fn.counterUp) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+    }
+  } catch(e) {}
   // Counter Up - End
   // --------------------------------------------------
 
@@ -112,7 +120,7 @@
 
   // Background Parallax - Start
   // --------------------------------------------------
-  if ($.fn.parallaxie) { $(".parallaxie").parallaxie({
+  $(".parallaxie").parallaxie({
     offset: 0,
     speed: 0.3,
   });
@@ -121,27 +129,27 @@
 
   // Scroll Animation - Start
   // --------------------------------------------------
-  if (typeof WOW !== 'undefined') { var wow = new WOW({
+  var wow = new WOW({
     animateClass: 'animated',
     offset: 100,
     mobile: true,
     duration: 1000,
   });
-  wow.init(); }
+  wow.init();
   // Scroll Animation - End
   // --------------------------------------------------
 
   // Popup Images & Videos - Start
   // --------------------------------------------------
-  if ($.fn.magnificPopup) { $('.popup_video').magnificPopup({
+  $('.popup_video').magnificPopup({
     type: 'iframe',
     preloader: false,
     removalDelay: 160,
     mainClass: 'mfp-fade',
     fixedContentPos: false
-  }); }
+  });
 
-  if ($.fn.magnificPopup) { $('.zoom-gallery').magnificPopup({
+  $('.zoom-gallery').magnificPopup({
     delegate: '.popup_image',
     type: 'image',
     closeOnContentClick: false,
@@ -182,20 +190,20 @@
 
   // Circle Progress - Start
   // --------------------------------------------------
-  if ($.fn.circleProgress) { $('.circle_progress_1').circleProgress({
+  $('.circle_progress_1').circleProgress({
     size: 80,
     value: 0.75,
     fill: {
       gradient: ["#3c5bf9"]
     }
-  }); }
-  if ($.fn.circleProgress) { $('.circle_progress_2').circleProgress({
+  });
+  $('.circle_progress_2').circleProgress({
     size: 80,
     value: 0.75,
     fill: {
       gradient: ["#0c21ca"]
     }
-  }); }
+  });
   // Circle Progress - End
   // --------------------------------------------------
 
@@ -494,7 +502,7 @@
 
   // Masoney - Start
   // --------------------------------------------------
-  if ($.fn.isotope) { var $element_grid = $(".element_grid").isotope({
+  var $element_grid = $(".element_grid").isotope({
     itemSelector: ".element-item",
     layoutMode: "fitRows"
   });
@@ -516,7 +524,7 @@
     var filterValue = $(this).attr("data-filter");
     filterValue = filterFns[filterValue] || filterValue;
     $element_grid.isotope({ filter: filterValue });
-  }); }
+  });
   $(".button-group").each(function(i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
     $buttonGroup.on("click", "button", function() {
