@@ -17,7 +17,7 @@
     } else {
       $('.backtotop').stop(true, true).fadeOut();
     }
-  });
+  }); }
   $(function() {
     $(".scroll").on('click', function() {
       $("html,body").animate({scrollTop: 0}, "slow");
@@ -29,8 +29,9 @@
 
   // preloader - Start
   // --------------------------------------------------
+  $('#preloader').remove();
   $(window).on('load', function(){
-    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    $('#preloader').remove();
   });
   // preloader - End
   // --------------------------------------------------
@@ -43,7 +44,7 @@
     } else {
       $('.header_sticky').removeClass("sticky")
     }
-  });
+  }); }
   // Header Sticky - End
   // --------------------------------------------------
 
@@ -85,16 +86,16 @@
 
   // Select Option - Start
   // --------------------------------------------------
-  $('select').niceSelect();
+  if ($.fn.niceSelect && $('select').length > 0) { $('select').niceSelect(); }
   // Select Option - End
   // --------------------------------------------------
 
   // Counter Up - Start
   // --------------------------------------------------
-  $('.counter').counterUp({
+  if ($.fn.counterUp) { $('.counter').counterUp({
     delay: 10,
     time: 1000
-  });
+  }); }
   // Counter Up - End
   // --------------------------------------------------
 
@@ -111,7 +112,7 @@
 
   // Background Parallax - Start
   // --------------------------------------------------
-  $(".parallaxie").parallaxie({
+  if ($.fn.parallaxie) { $(".parallaxie").parallaxie({
     offset: 0,
     speed: 0.3,
   });
@@ -120,27 +121,27 @@
 
   // Scroll Animation - Start
   // --------------------------------------------------
-  var wow = new WOW({
+  if (typeof WOW !== 'undefined') { var wow = new WOW({
     animateClass: 'animated',
     offset: 100,
     mobile: true,
     duration: 1000,
   });
-  wow.init();
+  wow.init(); }
   // Scroll Animation - End
   // --------------------------------------------------
 
   // Popup Images & Videos - Start
   // --------------------------------------------------
-  $('.popup_video').magnificPopup({
+  if ($.fn.magnificPopup) { $('.popup_video').magnificPopup({
     type: 'iframe',
     preloader: false,
     removalDelay: 160,
     mainClass: 'mfp-fade',
     fixedContentPos: false
-  });
+  }); }
 
-  $('.zoom-gallery').magnificPopup({
+  if ($.fn.magnificPopup) { $('.zoom-gallery').magnificPopup({
     delegate: '.popup_image',
     type: 'image',
     closeOnContentClick: false,
@@ -181,20 +182,20 @@
 
   // Circle Progress - Start
   // --------------------------------------------------
-  $('.circle_progress_1').circleProgress({
+  if ($.fn.circleProgress) { $('.circle_progress_1').circleProgress({
     size: 80,
     value: 0.75,
     fill: {
       gradient: ["#3c5bf9"]
     }
-  });
-  $('.circle_progress_2').circleProgress({
+  }); }
+  if ($.fn.circleProgress) { $('.circle_progress_2').circleProgress({
     size: 80,
     value: 0.75,
     fill: {
       gradient: ["#0c21ca"]
     }
-  });
+  }); }
   // Circle Progress - End
   // --------------------------------------------------
 
@@ -493,7 +494,7 @@
 
   // Masoney - Start
   // --------------------------------------------------
-  var $element_grid = $(".element_grid").isotope({
+  if ($.fn.isotope) { var $element_grid = $(".element_grid").isotope({
     itemSelector: ".element-item",
     layoutMode: "fitRows"
   });
@@ -515,7 +516,7 @@
     var filterValue = $(this).attr("data-filter");
     filterValue = filterFns[filterValue] || filterValue;
     $element_grid.isotope({ filter: filterValue });
-  });
+  }); }
   $(".button-group").each(function(i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
     $buttonGroup.on("click", "button", function() {
