@@ -7864,3 +7864,102 @@ html, body, .body_wrap {
     margin: 0 auto !important;
     text-align: center !important;
 }
+
+/* ==================================================
+   Mobile UX & Fixed Bottom Action Bar
+   ================================================== */
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 65px !important;
+  }
+  .desktop-floating-cta {
+    display: none !important;
+  }
+  .backtotop {
+    display: none !important;
+  }
+  .mobile-bottom-bar {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.12);
+    z-index: 999999;
+    padding: 6px 10px;
+    gap: 8px;
+    align-items: center;
+  }
+  .mobile-bottom-bar a {
+    flex: 1;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.1s;
+  }
+  .mobile-bottom-bar a:active {
+    transform: scale(0.97);
+  }
+  .mobile-bottom-bar .btn-wa {
+    background: #25D366;
+    color: #ffffff !important;
+  }
+  .mobile-bottom-bar .btn-call {
+    background: #0077b6;
+    color: #ffffff !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-bottom-bar {
+    display: none !important;
+  }
+  .backtotop {
+    bottom: 110px !important;
+    right: 25px !important;
+  }
+  .desktop-floating-cta {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .desktop-floating-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    color: #ffffff !important;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .desktop-floating-cta a:hover {
+    transform: scale(1.08);
+  }
+  .desktop-floating-cta .btn-wa {
+    background: #25D366;
+    font-size: 28px;
+  }
+  .desktop-floating-cta .btn-call {
+    background: #0077b6;
+    font-size: 22px;
+  }
+}

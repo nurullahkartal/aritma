@@ -464,16 +464,23 @@
   </div>
 </footer>
 
-<!-- Floating WhatsApp & Call Widget for Mobile / Desktop -->
-<div style="position:fixed; bottom:25px; right:25px; z-index:9999; display:flex; flex-direction:column; gap:12px;">
-  <a href="https://api.whatsapp.com/send?phone=905415153010&text=Merhaba%20G%C3%9CVEN%20Su%20Ar%C4%B1tma%2C%20İslahiye, Oğuzeli, Nurdağı%20i%C3%A7in%20servis%20bilgisi%20almak%20istiyorum." target="_blank" style="display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#25D366; color:#fff; border-radius:50%; box-shadow:0 6px 20px rgba(37,211,102,0.4); font-size:30px; text-decoration:none; transition:all 0.3s;" title="WhatsApp İletişim">
+<!-- Mobile & Desktop Unified CTA Widget -->
+<div class="desktop-floating-cta">
+  <a href="https://api.whatsapp.com/send?phone=905415153010&text=Merhaba%20G%C3%9CVEN%20Su%20Ar%C4%B1tma%2C%20servis%20bilgisi%20almak%20istiyorum." class="btn-wa" target="_blank" title="WhatsApp Canlı Destek">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <a href="tel:05415153010" style="display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#0077b6; color:#fff; border-radius:50%; box-shadow:0 6px 20px rgba(0,119,182,0.4); font-size:24px; text-decoration:none; transition:all 0.3s;" title="Hemen Ara: 0541 515 30 10">
+  <a href="tel:05415153010" class="btn-call" title="Hemen Ara: 0541 515 30 10">
     <i class="fas fa-phone-alt"></i>
   </a>
 </div>
 
+<div class="mobile-bottom-bar">
+  <a href="https://api.whatsapp.com/send?phone=905415153010&text=Merhaba%2C%20su%20ar%C4%B1tma%20servis%20randevusu%20almak%20istiyorum." class="btn-wa" target="_blank">
+    <i class="fab fa-whatsapp me-2" style="font-size:18px;"></i> WhatsApp
+  </a>
+  <a href="tel:05415153010" class="btn-call">
+    <i class="fas fa-phone-alt me-2" style="font-size:15px;"></i> Hemen Ara
+  </a>
 </div>
 
 
